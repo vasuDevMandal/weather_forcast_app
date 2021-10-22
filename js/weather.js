@@ -3,7 +3,7 @@ const appConstants = {
     baseUrl: "https://api.openweathermap.org/data/2.5/weather",
     units: "metric",
     unknownValue: "NA",
-    imageUrl: "http://openweathermap.org/img/wn/",
+    imageUrl: "https://openweathermap.org/img/wn/",
   };
   
   function getWeatherInformation(event) {
