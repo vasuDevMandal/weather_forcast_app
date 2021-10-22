@@ -221,15 +221,16 @@ nav {
     }
     
     .main_container{
-        margin: auto;
+       
         width:100%;
         height: 100%;
-        padding: 4vh;
+        padding: 4vh 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        border:var(--bdr);
-        /* background-color: aliceblue; */
+        border:var(--bdr); 
+        margin: auto;
+        align-items: center;
     }
     
     .container_left, .container_right{
