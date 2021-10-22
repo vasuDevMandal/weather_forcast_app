@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my weather forcast</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/weather.js"></script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+    </style>
+</head>
+<body>
+    <nav>weather forcast 
+      <div class="nav_search">
+        <form name="search" class="input-group" onsubmit="getWeatherInformation(event)">
+            <input type="text" placeholder="Search by city name..." value="mumbai" required/>
+            <button class="button" type="submit">
+                <i class="fas fa-search fa-1x"></i>
+            </button>
+        </form>
+    </div>
+    </nav>
+    
+
+    <div class="main_container">
+
+      <div class="container_left">
+
+        <div class="weather_info">
+          <div class="weather_img">
+            <img src="http://openweathermap.org/img/wn/50d.png" alt="">
+          </div>
+          <div class="weather_temp">9</div>
+          <div class="weather_temp_c">&deg;C</div>
+        </div>
+
+        <div class="place_info">
+          <div class="weather_desc"><span id="weather_desc">smoke</span></div>
+          <div class="weather_day">Today, <span id="weather_day">monday</span></div>
+          <div class="weather_place">In, <span id="weather_city">mumbai</span></div>
+          <div class="weather_date">On, <span id="weather_date">21 oct 2021</span></div>
+        </div>
+
+      </div>
+
+      <div class="container_right" id="container_right">
+
+        <div class="wind_speed">wind: <span id="wind_speed">2.5 m/s</span></div>
+        <div class="wind_dir">wind direction: <span id="wind_dir">121&deg;</span></div>
+        <div class="humidity">humidity: <span id="humidity">25%</span></div>
+        <div class="min_temp">min: <span id="min_temp">7&deg;C</span></div>
+        <div class="max_temp">max: <span id="max_temp">11&deg;C</span></div>
+        <div class="pressure">pressure: <span id="pressure">44 hPa</span></div>
+        <div class="visibility">visibility: <span id="visibility">2000 mtrs</span></div>
+        <div class="clouds">clouds: <span id="clouds">45%</span> </div>
+        
+
+      </div>
+
+
+    </div>
+</body>
+</html>

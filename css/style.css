@@ -1,0 +1,170 @@
+/* @import "mobileStyle.css" ; */
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'comfortaa';
+}
+
+:root{
+    /* --bdr:1px solid black; */
+    --bdr_rds: 25px;
+}
+body{
+    background: black url(pics/forest3.jpg) no-repeat  center;
+    transition:  background-position 30s ease-in;
+}
+body:hover{
+    background: black url(pics/forest3.jpg) no-repeat right top;
+    transition: background-position 40s ease-out;
+}
+nav {
+    /* border:var(--bdr); */
+    /* background: linear-gradient( to right, grey,black); */
+    background-color: grey;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    padding: 1vh;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow:  0 0 10px 0 black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav_search{
+    width: 50vh;
+    /* border: 1px solid black; */
+}
+.nav_search form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid #fff;
+}
+.nav_search input{
+    width: 90%;
+    padding: 1vh;
+    outline: none;
+    border: none;
+    padding: 2vh;
+}
+.nav_search form button{
+    width: 10vh;
+    outline: none;
+    border: none;
+}
+.nav_search form button:hover{
+    background-color:rgb(226, 221, 221);
+    cursor: pointer;
+}
+.nav_search input{
+    /* border: 1px solid red; */
+
+}
+
+.main_container{
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    padding: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border:var(--bdr);
+    /* background-color: aliceblue; */
+}
+
+.container_left, .container_right{
+    width: 50vh;
+    height: 62vh;
+    padding: 4vh;
+    /* border:var(--bdr); */
+    border-radius: 10%;
+    background-color: white ;
+    box-shadow: 0 0 1vh 0 black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    transition: padding .5s,background-color .2s;
+}
+
+.container_left:hover, .container_right:hover{
+    
+    padding: 5vh;
+}
+
+.weather_info{
+    width: 40vh;
+    height: 40vh;
+    padding: 4vh;
+    position: relative;
+    
+}
+
+.weather_info > div{
+    position: absolute;
+    font-size: 5em;
+    margin-right: 1px;
+}
+.weather_img, .weather_temp{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather_img{
+    height: 10vh;
+    width: 10vh;
+    padding: 1vh;
+    top:8vh;
+    left:0;
+    background-color: #fff;
+    z-index: 2;
+}
+.weather_info .weather_temp {
+    height: 18vh;
+    width: 18vh;
+    padding: 10vh;
+    top:0;
+    color: orange;
+    background-color: grey;
+    box-shadow: 0 0 1vh 0 #fff;
+    font-size: 3em;
+}
+.weather_temp_c{
+    top:2vh;
+    right: 0;
+    border: none;
+    color: rgb(141, 109, 49);
+}
+
+.place_info{
+}
+
+.place_info > div {
+   padding: 2vh;
+   width: 50vh;
+}
+#weather_desc{
+    color: orange;
+    font-size: 2em;
+}
+
+.place_info div span{
+    color: rgb(90, 58, 58);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.container_right span{
+    color: rgb(90, 58, 58);
+    font-weight: bold;
+    font-size: 1.5em;
+    float: right;
+    /* border: 1px solid black;  */
+}
+
+
