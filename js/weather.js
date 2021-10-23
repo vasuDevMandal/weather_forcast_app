@@ -155,9 +155,9 @@ const appConstants = {
     let tempC = document.querySelector(".weather_temp_c");
  
       if(temp.innerText <= 0){
-        temp.style.backgroundColor = "#15A8E2";
-        temp.style.color = "blue";
-        tempC.style.color = "blue";
+        temp.style.backgroundColor = "#66CCFF";
+        temp.style.color = "white";
+        tempC.style.color = "#15A8E2";
       }else {
         temp.style.backgroundColor = "grey";
         temp.style.color = "orange";
