@@ -68,6 +68,7 @@ const appConstants = {
     document.querySelector(
       "#weather_desc"
     ).innerHTML = `${data?.weather?.[0]?.main || appConstants.unknownValue}`;
+
   
     // Update information data
     const infoNodes = document.querySelectorAll(".container_right span");
@@ -149,4 +150,20 @@ const appConstants = {
   }
 
 
-  
+  function myFunction(){
+    let temp = document.querySelector(".weather_temp");
+    let tempC = document.querySelector(".weather_temp_c");
+ 
+      if(temp.innerText <= 0){
+        temp.style.backgroundColor = "#15A8E2";
+        temp.style.color = "blue";
+        tempC.style.color = "blue";
+      }else {
+        temp.style.backgroundColor = "grey";
+        temp.style.color = "orange";
+        tempC.style.color = "#8D6D31";
+      }
+
+  }
+
+  setInterval(myFunction,2000);

@@ -18,11 +18,12 @@
       @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
     </style>
 </head>
-<body>
+<body onload="getWeatherInformation(event);">
     <nav>weather forcast 
-      <div class="nav_search">
-        <form name="search" class="input-group" onsubmit="getWeatherInformation(event)">
-            <input type="text" placeholder="Search by city name..." value="mumbai" required/>
+      <div class="nav_search" >
+        <form name="search" class="input-group" onsubmit="getWeatherInformation(event)" 
+        >
+            <input type="text" placeholder="Search by city name..." value="kargil" required/>
             <button class="button" type="submit">
                 <i class="fas fa-search fa-1x"></i>
             </button>
